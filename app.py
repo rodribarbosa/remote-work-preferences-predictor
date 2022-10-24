@@ -3,14 +3,14 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-import matplotlib.pyplot as plt
-from ipywidgets import widgets
+#import matplotlib.pyplot as plt
+#from ipywidgets import widgets
 
-import mpld3
-from mpld3 import plugins
+#import mpld3
+#from mpld3 import plugins
 
-import pydeck as pdk
-from pydeck.types import String
+#import pydeck as pdk
+#from pydeck.types import String
 
 from plotly import express as px
 
@@ -223,13 +223,13 @@ else:
                                      ,labels={f: all_features[f], label: 'Average ' + labels[label].lower()})
                     avg_fig.update(layout_showlegend=False)
                     st.plotly_chart(avg_fig, use_container_width = True)
-            else:
-                fig = plt.figure(figsize=(5,5))
-                plt.plot(xentry, yentry)
-                plt.xlabel(all_features[f])
-                plt.ylabel('Average ' + labels[label].lower())
+            #else:
+             #   fig = plt.figure(figsize=(5,5))
+             #   plt.plot(xentry, yentry)
+             #   plt.xlabel(all_features[f])
+             #   plt.ylabel('Average ' + labels[label].lower())
             
-                st.pyplot(fig)
+             #   st.pyplot(fig)
        
     
     
